@@ -1,0 +1,67 @@
+{{ define "home" }}
+{{ template "header" . }}
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-price {
+        font-size: 1.1em;
+        color: #007bff;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+    <div class="row">
+        {{ range .Item }}
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <a href="/product?id={{ .Id }}" class="btn">
+                <div class="card">
+                    <img src="{{ .Picture }}" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ .Name }}</h5>
+                        <p class="card-price">{{ .Price }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+{{ template "footer" . }}
+{{ end }}
