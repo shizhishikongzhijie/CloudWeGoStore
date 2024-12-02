@@ -1,29 +1,8 @@
-# *** Project
-
-## introduce
-
-- Use the [Hertz](https://github.com/cloudwego/hertz/) framework
-- Integration of pprof, cors, recovery, access_log, gzip and other extensions of Hertz.
-- Generating the base code for unit tests.
-- Provides basic profile functions.
-- Provides the most basic MVC code hierarchy.
-
-## Directory structure
-
-|  catalog   | introduce  |
-|  ----  | ----  |
-| conf  | Configuration files |
-| main.go  | Startup file |
-| hertz_gen  | Hertz generated model |
-| biz/handler  | Used for request processing, validation and return of response. |
-| biz/service  | The actual business logic. |
-| biz/dal  | Logic for operating the storage layer |
-| biz/route  | Routing and middleware registration |
-| biz/utils  | Wrapped some common methods |
-
-## How to run
-
-```shell
-sh build.sh
-sh output/bootstrap.sh
-```
+[![Release](https://img.shields.io/github/v/release/shizhishikongzhijie/CloudWeGoStore)](https://github.com/shizhishikongzhijie/CloudWeGoStore/releases)
+[![WebSite](https://img.shields.io/website?up_message=cloudwego&url=https%3A%2F%2Fwww.cloudwego.io%2F)](https://www.cloudwego.io/)
+[![License](https://img.shields.io/github/license/shizhishikongzhijie/CloudWeGoStore)](https://github.com/shizhishikongzhijie/CloudWeGoStore/blob/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shizhishikongzhijie/CloudWeGoStore)](https://goreportcard.com/report/github.com/shizhishikongzhijie/CloudWeGoStore)
+[![OpenIssue](https://img.shields.io/github/issues/shizhishikongzhijie/CloudWeGoStore)](https://github.com/shizhishikongzhijie/CloudWeGoStore/issues)
+[![ClosedIssue](https://img.shields.io/github/issues-closed/shizhishikongzhijie/CloudWeGoStore)](https://github.com/shizhishikongzhijie/CloudWeGoStore/issues?q=is%3Aissue+is%3Aclosed)
+![Stars](https://img.shields.io/github/stars/shizhishikongzhijie/CloudWeGoStore)
+![Forks](https://img.shields.io/github/forks/shizhishikongzhijie/CloudWeGoStore)
